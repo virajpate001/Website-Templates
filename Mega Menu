@@ -1,0 +1,64 @@
+//css
+.mega-menu {
+    position: relative;
+}
+
+.mega-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    width: 100%;
+}
+
+.mega-menu:hover .mega-content {
+    display: block;
+}
+
+
+
+
+//HTML
+<nav class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="mega-menu"> <a href="#">Categories</a>
+                                <div class="mega-content">
+                                    <div class="category">
+                                        <h2>Category 1</h2>
+                                        <ul>
+                                            <li><a href="#">Subcategory 1</a></li>
+                                            <li><a href="#">Subcategory 2</a></li>
+                                            <li><a href="#">Subcategory 3</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="category">
+                                        <h2>Category 2</h2>
+                                        <ul>
+                                            <li><a href="#">Subcategory 1</a></li>
+                                            <li><a href="#">Subcategory 2</a></li>
+                                            <li><a href="#">Subcategory 3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mega-menu"> <a href="#">About Us</a>
+                                <div class="mega-content">
+                                    <div class="about-content">
+                                        <h2>About Our Company</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p> <a href="#">Read More</a>
+                                    </div>
+                                    <div class="about-content">
+                                        <h2>Our Team</h2>
+                                        <ul>
+                                            <li><a href="#">Team Member 1</a></li>
+                                            <li><a href="#">Team Member 2</a></li>
+                                            <li><a href="#">Team Member 3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
