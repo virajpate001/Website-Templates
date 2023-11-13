@@ -14,6 +14,95 @@
     ================================================== -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+    header{
+	background-color: #000;
+}
+
+.main-header{
+	position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header .container{
+	max-width: 1140px;
+	background-size: cover;
+	margin: auto;
+}
+
+header .row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .row nav ul li{
+margin-right: 35px;
+}
+
+header .row nav ul li a{
+	color: #fff;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu ,.mob-menu-inner{
+  	display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	/*  header	*/ 
+	header .desktop-menu{
+		display: none;
+	}
+
+	header .mobile-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+	}
+
+     header .m-logo{
+      align-self: center;
+     }
+
+	header .m-nav .bx-menu{
+      font-size: 34px;
+    color: #fff;
+    align-items: center;
+	}
+     
+   /*  header mobile*/ 
+    header .mob-menu-inner{
+    	padding: 20px;
+    }
+
+    .mob-menu-inner{
+     display: none;
+    }
+
+    .mob-menu-inner nav ul li{
+    	border-bottom: 1px solid #ffffff82;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    }
+
+    .mob-menu-inner nav ul li a{
+    	color: #fff;
+    }
+    
+    .db{
+     display: block;
+    }
+
+}
+    </style>
   
   <!-- JS Files
     ================================================== -->
