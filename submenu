@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submenu Example</title>
+  <style>
+    /* Reset some default styles */
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style the main navigation */
+    ul {
+      list-style: none;
+      background-color: #333;
+      display: flex;
+    }
+
+    li {
+      position: relative;
+    }
+
+    a {
+      display: block;
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Style the submenu */
+    ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #555;
+    }
+
+    ul li:hover > ul {
+      display: inherit;
+    }
+
+    ul ul li {
+      position: relative;
+    }
+
+    ul ul a {
+      padding: 10px 15px;
+    }
+
+    ul ul ul {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#">Services</a>
+      <ul>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Graphic Design</a></li>
+        <li>
+          <a href="#">Development</a>
+          <ul>
+            <li><a href="#">Front-end</a></li>
+            <li><a href="#">Back-end</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+</body>
+</html>
